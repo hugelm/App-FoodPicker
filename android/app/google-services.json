@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "424372768647",
+    "project_id": "food-picker-141a5",
+    "storage_bucket": "food-picker-141a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424372768647:android:569430db684de437298d22",
+        "android_client_info": {
+          "package_name": "com.foodpickerDBHW.flutter_applicationtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424372768647-17gg3ec187l7r773qpgsl256ojta5c9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4X_5yl35vNCSbotVWgHnW1QFtumMyhdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424372768647-17gg3ec187l7r773qpgsl256ojta5c9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
