@@ -18,7 +18,6 @@ class _SignInState extends State<SignIn> {
   bool loading = false;
 
   final AuthService _auth = AuthService();
-  //final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -26,16 +25,19 @@ class _SignInState extends State<SignIn> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
+            Image.asset('assets/icons/logo.jpg', height: 300, width: 300),
+            /*
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
-                  'FoodPicker',
+                  'get some stuff',
                   style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.w500,
                       fontSize: 30),
                 )),
+            */
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
@@ -46,9 +48,7 @@ class _SignInState extends State<SignIn> {
             Container(
               padding: const EdgeInsets.all(10),
               child: TextFormField(
-                //key: _formKey,
                 controller: nameController,
-                //validator: (nameController) => nameController != "" ? "Bitte geben Sie eine gültige E-Mail Adresse ein." : null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Email',
@@ -59,9 +59,7 @@ class _SignInState extends State<SignIn> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: TextFormField(
                 obscureText: true,
-                //key: _formKey,
                 controller: pwdController,
-                //validator: (pwdController) => pwdController != ""  ? "Bitte geben Sie eine gültige E-Mail Adresse ein." : null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Passwort',

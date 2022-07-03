@@ -49,7 +49,7 @@ class _AppNavigationState extends State<AppNavigation> {
         initialData: CartModel(timestamp: "", username: "", balance: 0, cart: []),
         child: Scaffold (
         appBar: AppBar(
-          title: const Text("Food Picker"),
+          title: const Text("get some stuff"),
           actions: [
             IconButton(
               onPressed: () {
@@ -67,7 +67,7 @@ class _AppNavigationState extends State<AppNavigation> {
               }, 
               icon: const Icon(Icons.logout)),
           ],
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.green,
         ),
         body: pages[selectedTab],
         bottomNavigationBar: BottomNavigationBar(
@@ -82,17 +82,17 @@ class _AppNavigationState extends State<AppNavigation> {
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: "Bestellliste",
-              backgroundColor: Colors.blueAccent,
+              backgroundColor: Colors.green,
               ),
             BottomNavigationBarItem(
               icon: Icon(Icons.local_grocery_store),
               label: "Snacks",
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.green,
               ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: "Account",
-              backgroundColor: Colors.blueAccent,
+              backgroundColor: Colors.green,
               ),
           ],
         ),

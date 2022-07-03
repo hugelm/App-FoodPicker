@@ -63,7 +63,7 @@ class ProductsTile extends StatelessWidget {
                           ),
                           Text(
                             product.name,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 30,
                               color: Colors.black,
                               fontWeight: FontWeight.w500,
@@ -105,7 +105,7 @@ class ProductsTile extends StatelessWidget {
                                   },
                               style: ButtonStyle(
                                   backgroundColor:
-                                      MaterialStateProperty.all(Colors.black)),
+                                      MaterialStateProperty.all(Colors.green)),
                               child: Padding(
                                 padding: const EdgeInsets.all(4),
                                 child: Row(

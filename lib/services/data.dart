@@ -1,12 +1,6 @@
 import "package:cloud_firestore/cloud_firestore.dart";
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_applicationtest/model/cart.dart';
 import 'package:flutter_applicationtest/model/product.dart';
-import 'package:flutter_applicationtest/model/user.dart';
-import 'package:flutter_applicationtest/pages/subpages/cart.dart';
-import 'package:flutter_applicationtest/pages/subpages/products.dart';
-import 'package:provider/provider.dart';
-
 class DataService {
 
   final String? UID;

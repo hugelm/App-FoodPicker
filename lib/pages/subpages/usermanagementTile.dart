@@ -1,9 +1,7 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationtest/model/cart.dart';
 import 'package:flutter_applicationtest/model/product.dart';
 import 'package:flutter_applicationtest/model/user.dart';
-import 'package:flutter_applicationtest/pages/subpages/usermanagementTileItems.dart';
 import 'package:flutter_applicationtest/services/data.dart';
 import 'package:provider/provider.dart';
 
@@ -47,7 +45,6 @@ class UsermanagementTile extends StatelessWidget {
                                   color: Colors.grey[100],
                                   child: Text(" • ${userProfile.cart[index]}",
                                   style: TextStyle(
-                                      //color: Colors.grey[800],
                                       fontWeight: FontWeight.w400,
                                       fontStyle: FontStyle.normal,
                                       fontFamily: 'Open Sans',

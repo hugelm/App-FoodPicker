@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       initialData: null,
       child: MaterialApp(
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.green,
           ),
           home: const MyHomePage(title: 'Food Picker'),
         ),

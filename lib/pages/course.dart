@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationtest/model/cart.dart';
 import 'package:flutter_applicationtest/pages/subpages/usermanagement.dart';
@@ -14,7 +13,7 @@ class Course extends StatelessWidget {
     void _showDeliveryDoneConfirmation(){
       showModalBottomSheet(context: context, builder: (context) {
           return Container(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 60),
               child: const Text("Alle versorgt?"),
           );
         }

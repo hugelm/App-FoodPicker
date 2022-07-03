@@ -1,10 +1,8 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationtest/model/cart.dart';
 import 'package:flutter_applicationtest/model/user.dart';
 import 'package:flutter_applicationtest/pages/loading.dart';
 import 'package:flutter_applicationtest/pages/subpages/topUp.dart';
-import 'package:flutter_applicationtest/router.dart';
 import 'package:flutter_applicationtest/services/auth.dart';
 import 'package:flutter_applicationtest/services/data.dart';
 import 'package:provider/provider.dart';
@@ -71,7 +69,7 @@ class _SettingsState extends State<SettingsUser> {
                     ),
                     const SizedBox(height: 20),
                     RaisedButton(
-                      color: Colors.blueAccent,
+                      color: Colors.green,
                       shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(16.0))),
                       child: Text("Aktualisieren"),
@@ -79,17 +77,16 @@ class _SettingsState extends State<SettingsUser> {
                         if(_formKey.currentState!.validate()){
                           await DataService(UID: user.UID).updateCart(_currentName ?? userCart!.username, userCart!.balance, userCart.cart);
                           _showToast(context);
-                          //Navigator.pop(context);
                         }
                       }
                     ),
                     const SizedBox(height: 20),
-                    const Text("Dein Kontostand:", style: TextStyle(fontSize: 18),),
+                    const Text("Dein Kontostand: ", style: TextStyle(fontSize: 18),),
                     const SizedBox(height: 10),
                     Text("${userCart!.balance.toStringAsFixed(2)}€", style: const TextStyle(fontSize: 18),),
                     const SizedBox(height: 20),
                     RaisedButton(
-                      color: Colors.blueAccent,
+                      color: Colors.green,
                       shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(16.0))),
                       child: const Text("Aufladen"),
@@ -100,7 +97,7 @@ class _SettingsState extends State<SettingsUser> {
                     const Text("Schon satt?", style: TextStyle(fontSize: 18),),
                     const SizedBox(height: 10),
                     RaisedButton(
-                      color: Colors.blueAccent,
+                      color: Colors.green,
                       shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(16.0))),
                       child: const Text("Ausloggen"),
